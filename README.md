@@ -39,7 +39,7 @@ Exit program
 
 ## Features
 
-**Make sure an `image` is loaded**
+**Make sure an `image` is loaded before trying any feature**
 
 ### Merge
 
