@@ -40,6 +40,7 @@ Exit program
 ## Features
 
 **Make sure an `image` is loaded before trying any feature**
+**A feature edits the `current image`**
 
 ### Merge
 
