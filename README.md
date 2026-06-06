@@ -35,6 +35,21 @@
 java -jar path/to/executable.jar
 ```
 
+## Live Demo
+
+You can run this application directly in your web browser via the link below:
+
+**[Launch Live Demo](https://rjperez94.github.io/ImageProcessor/)**
+
+### Loading Local Images
+
+If you are trying to pick a file from your physical hard drive, you cannot browse your local folders through the Java window. You must use the bridge upload feature.
+
+1. Look at the very top right of the Java window's title bar for a small **Up Arrow (Upload)** button.
+2. Click it to trigger your **native browser file picker** (this one can see your real computer folders).
+3. Select your local file. The app will silently drop it into the virtual folder named `/files/uploads/`.
+4. Now, inside your Java file picker, type `/files/uploads/` into the file path bar and press **Enter** to find your uploaded file.
+
 ## Miscellaneous
 
 ### Load
