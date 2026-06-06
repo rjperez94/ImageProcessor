@@ -19,6 +19,22 @@
 
 1. Right click on your `Java Project` --> `Run As` --> `Java Application` --> `ImageProcessor`
 
+## Build an executable using IntelliJ IDEA
+
+1. Go to **File** → **Project Structure** → **Artifacts**.
+2. Click the green plus (**+**) button, select **JAR**, and choose **From modules with dependencies...**
+3. In the **Main Class** field, click the folder icon and select the application's entry point class.
+4. Under **JAR files from libraries**, select **extract to the target JAR** (this creates the single Fat JAR).
+5. Click **OK**, then click **Apply**.
+6. From the top menu bar, go to **Build** → **Build Artifacts...** and click **Build**.
+7. The executable jar file will be generated inside the project directory under `out/artifacts/`.
+
+### Run the executable JAR file using the command line:
+
+```bash
+java -jar path/to/executable.jar
+```
+
 ## Miscellaneous
 
 ### Load
