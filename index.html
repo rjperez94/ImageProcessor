@@ -20,7 +20,10 @@
 
         // 4. Run the application.
         // Note: '/app/' is a virtual mount point that maps to the root directory of your website.
-        await cheerpjRunJar("/app/ImageProcessor.jar");
+        await cheerpjRunMain(
+            "ImageProcessor",
+            "/app/ImageProcessor.jar"
+        );
     }
 
     // Start the application loading process
