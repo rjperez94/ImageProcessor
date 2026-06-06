@@ -12,8 +12,8 @@
 
 <script>
     async function loadJavaApp() {
-        // 2. Initialize the WebAssembly JVM environment
-        await cheerpjInit();
+        // 2. Initialize the WebAssembly JVM environment - initialize in Java 17 mode
+        await cheerpjInit({ version: 17 });
 
         // 3. Create a graphical window to contain Swing/AWT components
         cheerpjCreateDisplay(1024, 768);
