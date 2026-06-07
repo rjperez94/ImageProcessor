@@ -6,8 +6,8 @@
 	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg">
     <!-- 1. Load the CheerpJ Runtime Library -->
     <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
-	<!-- Include Marked.js library via CDN -->
-	<script src="https://jsdelivr.net"></script>
+	<!-- Import the Zero-MD script to render markdown in your HTML -->
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@2/dist/zero-md.min.js"></script>
 </head>
 <body>
 
@@ -34,21 +34,8 @@
     loadJavaApp();
 </script>
 
-<div id="content">Loading content...</div>	
-
-<script>
-        // Fetch your Markdown file from the repository
-        fetch('README.md')
-            .then(response => response.text())
-            .then(markdownText => {
-                // Convert Markdown text to HTML and inject it
-                document.getElementById('content').innerHTML = marked.parse(markdownText);
-            })
-            .catch(error => {
-                document.getElementById('content').innerHTML = 'Error loading content.';
-                console.error(error);
-            });
-</script>
+<!-- Load .md file by pointing the "src" attribute to it -->
+<zero-md src="README.md"></zero-md>
 	
 </body>
 </html>
