@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Java Application in the Browser</title>
+    <title>Java Application</title>
+	<link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg">
     <!-- 1. Load the CheerpJ Runtime Library -->
     <script src="https://cjrtnc.leaningtech.com/4.3/loader.js"></script>
 </head>
 <body>
 
-<h2>Web App</h2>
+<div id="java-container" style="width: 100vw; height: 100vh;"></div>
 
 <script>
     async function loadJavaApp() {
@@ -16,7 +17,8 @@
         await cheerpjInit({ version: 17 });
 
         // 3. Create a graphical window to contain Swing/AWT components
-        cheerpjCreateDisplay(-1, -1);
+        const container = document.getElementById("java-container");
+		cheerpjCreateDisplay(800, 600, container);
 
         // 4. Run the application.
         // Note: '/app/' is a virtual mount point that maps to the root directory of your website.
